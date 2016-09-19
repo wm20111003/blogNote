@@ -104,3 +104,6 @@ h3 { font-size: 1rem; }
 i { font-style: normal; }
 
 * { box-sizing: border-box; }
+
+.sidebar{width: 200px;float: left;display: block;position: fixed;z-index: 150;height: 100%;}
+.content{margin-left: 200px;}
