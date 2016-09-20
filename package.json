@@ -1,0 +1,26 @@
+{
+  "name": "ncs",
+  "version": "0.1.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-iconfont": "^8.0.1"
+  },
+  "description": "front end component in  zyzx",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wm20111003/blogNote.git"
+  },
+  "author": "wm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://wm20111003.github.io/blogNote/index.html"
+  },
+  "homepage": "https://wm20111003.github.io/blogNote#readme",
+  "dependencies": {
+    "imagemin-pngquant": "^4.2.0"
+  }
+}

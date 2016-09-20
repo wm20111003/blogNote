@@ -105,18 +105,20 @@ i { font-style: normal; }
 
 * { box-sizing: border-box; }
 .header{
-	background: #499bea;
-    background: -moz-linear-gradient(top,rgba(73,155,234,1) 0,rgba(32,124,229,1) 100%);
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(73,155,234,1)),color-stop(100%,rgba(32,124,229,1)));
-    background: -webkit-linear-gradient(top,rgba(73,155,234,1) 0,rgba(32,124,229,1) 100%);
-    background: -o-linear-gradient(top,rgba(73,155,234,1) 0,rgba(32,124,229,1) 100%);
-    background: -ms-linear-gradient(top,rgba(73,155,234,1) 0,rgba(32,124,229,1) 100%);
-    background: linear-gradient(to bottom,rgba(73,155,234,1) 0,rgba(32,124,229,1) 100%);
+	background: #627586;
+    background: -moz-linear-gradient(top,rgba(141, 166, 189) 0,rgba(50, 54, 58) 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(141, 166, 189)),color-stop(100%,rgba(50, 54, 58)));
+    background: -webkit-linear-gradient(top,rgba(141, 166, 189) 0,rgba(50, 54, 58) 100%);
+    background: -o-linear-gradient(top,rgba(141, 166, 189) 0,rgba(50, 54, 58) 100%);
+    background: -ms-linear-gradient(top,rgba(141, 166, 189) 0,rgba(50, 54, 58) 100%);
+    background: linear-gradient(to bottom,rgb(141, 166, 189) 0,rgb(50, 54, 58) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea', endColorstr='#207ce5', GradientType=0);
     height: 50px;
     line-height: 50px;
 }
-.header img{width: 40px;height:40px;border-radius: 50%;-webkit-border-radius:50%;margin-left: 20px;vertical-align: middle;}
-.nav-title{color: #fff;margin-left: 50px;}
-.sidebar{width: 200px;float: left;display: block;position: fixed;z-index: 150;height: 100%;}
-.content{margin-left: 200px;}
+.header img{width: 40px;height:40px;border-radius: 50%;-webkit-border-radius:50%;margin-left: 20px;vertical-align: middle;margin-bottom:5px;}
+.nav-title{color: #fff;margin-left: 20px;}
+.sidebar{width: 200px;float: left;display: block;z-index: 150;height:100%;position:fixed;padding-bottom:50px;border-right: 3px solid #999;}
+.sidebar .sidebar-list{height: 100%;width:100%;}
+.wrap{margin-left: 200px;}
+.content{overflow:auto;position: relative;padding: 20px;background: #576b7d;max-width: 97%;box-sizing: border-box;color:#fff;}

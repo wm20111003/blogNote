@@ -5,6 +5,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>学习日记</title>
 <link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/iconfont.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
 </head>
 <body>
     <div class="header">
@@ -12,16 +14,170 @@
         <a href="javascript:;" title="欢迎页" class="nav-title">学习日志</a>
     </div>
     <div class="sidebar">
-        
+        <div class="sidebar-list content mCustomScrollbar" id="sidebar">
+            <ul>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+                <li>
+                    <p class="sidebar-list-title">nodeJs</p>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="content">
+    <div class="wrap">
         <iframe id="iframeId" src="welcome.html" width="100%" height="100%" frameborder="0"></iframe>
     </div>
-<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript">
+$(document).ready(function(){
+   var init =  new Init();
+    init.initFrame();
+    init.sideScrollBar($("#sidebar"));
+    $(window).on('resize',init.initFrame);
     $('iframe').on('load',function(){
-       this.style.height = $(window).height()+'px';
+       this.style.height = $(window).height()-56+'px';
     });
+});
+function Init(){
+}
+Init.prototype.initFrame = function(){
+    $('iframe').height($(window).height()-56);
+}
+Init.prototype.sideScrollBar = function($el){
+    //初始化滚动条
+    $el.mCustomScrollbar({
+            scrollButtons:{enable:true},
+            theme:"rounded",//rounded-dark,3d
+        });
+}
 </script>
 </body>
 </html>
